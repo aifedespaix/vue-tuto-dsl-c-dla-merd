@@ -17,7 +17,7 @@
     {
     data: () => {
       return {
-        message: 'pute' // on renvoit un message
+        message: 'amie' // on renvoit un message
       }
     }
   });

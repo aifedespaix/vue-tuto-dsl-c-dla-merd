@@ -1,4 +1,4 @@
-<!--Ici c'est app.vue, un fichier .vue c'est simplement un fiçchier .html, ils ont juste changer en .vue, c'est tout-->
+<!--Ici c'est app.vue, un fichier .vue c'est simplement un fichier .html, ils ont juste changer en .vue, c'est tout-->
 
 <!-- par habitude, les developpeur vue ont tendance à tout mettre dans un seul fichier-->
 <!--dans l'ordre tu as : le code html, le code js, le code css-->
@@ -31,7 +31,7 @@ on peut y placer des variables que l'on va définir dans le code js plus bas
     data: () => { // ici on écrit les variables que l'on utilise dans la vue
       // on remarque que c'est une fonction anonme là encore
       return {
-        message: 'fils de pute' // on renvoit un message
+        message: 'copain' // on renvoit un message
       }
     }
   };

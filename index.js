@@ -13,6 +13,7 @@ import Vue from 'vue'
 // On l'importe depuis './src/App.vue'
 // tout import commençant par './' veut dire que c'est un fichier qui n'est pas dans node_modules
 import App from './src/App.vue'
+import SubForm from './src/SubForm.vue'
 
 // on a donc importé deux objets : Vue et un composant.
 // Ils vont permettre d'instancier vue
@@ -22,10 +23,10 @@ import App from './src/App.vue'
 // /!\ Pour comprendre le paramètre envoyé dans Vue : regarde le ./tuto_js.js /!\
 new Vue({
   // Render c'est ce que vue doit rendre, on lui demande de créer un élément provenant de app
-  render: createElement => createElement(App) // (arrow function)**
+  render: createElement => createElement(App, SubForm) // (arrow function)**
 })
 // L'objet renvoyé par vue possède une méthode '$mount' que l'on apelle avec en paramètre l'id de l'élément html parent de notre App
-.$mount('#app');
+.$mount('#app', '#subform');
 
 // là c'est chaud car c'est le launcheur
 // comprendre ça c'est comme comprendre comment teliway s'instancie
