@@ -10,62 +10,7 @@ partie 1 : le template : on y met le code html que l'on veut rendre,
 on peut y placer des variables que l'on va définir dans le code js plus bas
 -->
 <template>
-  <form
-  id="app"
-  @submit="checkForm"
-  action="https://vuejs.org/"
-  method="post"
->
-
-  <p v-if="errors.length">
-    <b>Please correct the following error(s):</b>
-    <ul>
-      <li v-for="error in errors">{{ error }}</li>
-    </ul>
-  </p>
-
-  <p>
-    <label for="name">Name</label>
-    <input
-      id="name"
-      v-model="name"
-      type="text"
-      name="name"
-    >
-  </p>
-
-  <p>
-    <label for="age">Age</label>
-    <input
-      id="age"
-      v-model="age"
-      type="number"
-      name="age"
-      min="0"
-    >
-  </p>
-
-  <p>
-    <label for="movie">Favorite Movie</label>
-    <select
-      id="movie"
-      v-model="movie"
-      name="movie"
-    >
-      <option>Star Wars</option>
-      <option>Vanilla Sky</option>
-      <option>Atomic Blonde</option>
-    </select>
-  </p>
-
-  <p>
-    <input
-      type="submit"
-      value="Submit"
-    >
-  </p>
-    <la-form-de-chiasse></la-form-de-chiasse>
-</form>
+  <la-form-de-chiasse></la-form-de-chiasse>
 <!--    Ensuite on appelle une balise html qui éxiste pas nativement, c'est un composant vue -->
 
 </template>

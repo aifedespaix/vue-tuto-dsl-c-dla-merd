@@ -4,6 +4,7 @@
   </h1>
 </template>
 
+
 <!-- le code js -->
 <script>
   // On charge vue car on a besoin de son taff
