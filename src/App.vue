@@ -14,12 +14,15 @@ on peut y placer des variables que l'on va définir dans le code js plus bas
     salut {{message}}
 <!--    ENsuite on appelle une balise html qui éxiste pas nativement, c'est un composant vue -->
     <la-merde-de-chiasse></la-merde-de-chiasse>
+<!--    // on importe le composant de damien-->
+    <la-form-de-chiasse></la-form-de-chiasse>
   </div>
 </template>
 
 <!-- le code js -->
 <script>
   import ComposantDeMerde from './ComposantDeMerde';
+  import ComposantSubFormDeMerde from './ComposantSubFormDeMerde'; // on importe le composant de damien
 
   // on exporte un object sans nom donc avec un nom "default"
   export default {
@@ -27,6 +30,7 @@ on peut y placer des variables que l'on va définir dans le code js plus bas
     components: { // liste les composants que l'on utilise dans notre app
       // Vue va voir ce composant et donc le charger (il va donc faire le lien avec la balise la-merde-de-chiasse)
       ComposantDeMerde,
+      ComposantSubFormDeMerde,  // on déclare le composant de damien à l'isntance de Vue
     },
     data: () => { // ici on écrit les variables que l'on utilise dans la vue
       // on remarque que c'est une fonction anonme là encore
